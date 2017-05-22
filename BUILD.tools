@@ -1,5 +1,13 @@
-jar_library(name = 'scalapbc',
-            jars = [
-              scala_jar('com.trueaccord.scalapb', 'scalapbc', '0.5.28'),
-            ])
+jar_library(
+  name = 'scalapbc',
+  jars = [
+    scala_jar('com.trueaccord.scalapb', 'scalapbc', '0.6.0-pre5'),
+  ]
+)
 
+jar_library(
+  name='scalafmt',
+  jars=[
+    scala_jar('com.geirsson', 'scalafmt-cli', '1.0.0-RC4')
+  ]
+)
